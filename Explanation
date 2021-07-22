@@ -1,0 +1,15 @@
+Information :
+•
+•
+•
+•
+•
+Quantum : 4 second
+Page size : 2KB
+RAM size : 32KB(out of OS codes)
+Second chance algorithm
+Each process has code, data and stack part (in the stack it can keeps
+the remaining time for example)
+• Process size : 64KB
+• Page tables are loaded in the Main memory(manage it by yourself)
+• TLB( at most 4 rows for each TLB)
