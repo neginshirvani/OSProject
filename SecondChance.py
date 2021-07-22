@@ -17,10 +17,25 @@ class SecondChance:
 
 
 
-    def replace_pages(self, pages, frames):
+    def replace_pages(self, pages, frames, x):
 
-        for i in range(frames):
-            res = self.give_a_chance(pages, frames)
+        i = 0
+        # Cause we have 4 rows in our TLB
+        while(i < 4):
+            # for i in range(frames):
+            chance = self.give_a_chance(pages, frames)
+
+            if(chance == False):
+                frames[i] = x
+                i += 1
+            else:
+                chance = False
+                i += 1
+
+            
+
+
+
 
 
 
